@@ -2,9 +2,7 @@ import pandas as pd
 from model.predictor import predictor
 from model import preprocess as pr
 from flask import Flask,request, render_template, send_from_directory
-import io
 import os
-import csv
 
 UPLOAD_FOLDER = './upload/'
 app = Flask(__name__)
