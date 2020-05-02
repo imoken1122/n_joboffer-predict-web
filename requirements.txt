@@ -1,4 +1,6 @@
 gunicorn
+wheel
+lightgbm
 numpy
 pandas
 flask
