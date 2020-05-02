@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>taco or burito ?</title>
+</head>
+<body>
+    <div class="container">
+        <div class = "header">
+            <h1>推論が完了しました</h1>
+        </div>
+    </div>
+    <div class = "form">
+        <form method="get" action="/export" enctype="multipart/form-data">
+            <input type="submit" value="予測結果をダウンロード(csv)" class="btn">
+        </form>
+        <form method="get" action="/" enctype="multipart/form-data">
+            <input type="submit" value="homeへ戻る" class="btn">
+        </form>
+    </div>
+</body>
+</html>
