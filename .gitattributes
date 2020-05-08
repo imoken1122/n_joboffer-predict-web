@@ -1,0 +1,2 @@
+model/pickle/haizoku_umap.pickle filter=lfs diff=lfs merge=lfs -text
+model/pickle/oubo_umap.pickle filter=lfs diff=lfs merge=lfs -text
