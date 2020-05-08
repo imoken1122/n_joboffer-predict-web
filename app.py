@@ -26,7 +26,7 @@ def csv_upload():
         #file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename)) #uploadフォルダに保存
         output = predictor(file)
 
-        output.to_csv(f"./output_csv/predict_{NAME[:-4]}.csv",index = None)
+        output.to_csv(f"./output_csv/predict.csv",index = None)
         #subprocess.call(["rm",f"./upload/{filename}"])
         return render_template("result.html")
         #ここに推論しているなんかページをreturnさせて, 終わったらcsvダウンロードボタンをだす
@@ -44,9 +44,9 @@ def export_action():
 
     return send_from_directory(
         directory= path + "/output_csv",
-        filename=f'predict_{NAME[:-4]}.csv',
+        filename=f'predict.csv',
         as_attachment=True,
-        attachment_filename=f"predict_{NAME[:-4]}.csv",
+        attachment_filename=f"predict.csv",
     )
 
 
